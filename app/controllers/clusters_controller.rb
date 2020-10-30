@@ -1,13 +1,14 @@
 class ClustersController < ApplicationController
 
     def index
+        render :json => Cluster.all
     end
 
-    def show
-    end
+    #def show
+    #end
 
-    def create
-    end
-    
+    #def create
+    #end
+
 
 end
