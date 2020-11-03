@@ -1,1 +1,2 @@
-console.log()
+const app = new AppContainer
+app.getClusters()
