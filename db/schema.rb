@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_10_30_010207) do
 
-  create_table "catergories", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_10_30_010207) do
 
   create_table "clusters", force: :cascade do |t|
     t.string "name"
-    t.integer "catergory_id"
+    t.integer "category_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,2 +1,3 @@
-class Catergory < ApplicationRecord
+class Category < ApplicationRecord
+    has_many :clusters
 end

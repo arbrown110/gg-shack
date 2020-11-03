@@ -6,7 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Cluster.create(name: "Food")
-Cluster.create(name: "Media")
-Cluster.create(name: "Clothing")
-Cluster.create(name: "Travel")
+Category.destroy_all
+Cluster.destroy_all
+
+food = Category.create(name: "Food")
+vid = Category.create(name: "Media")
+clothes = Category.create(name: "Clothing")
+location = Category.create(name: "Travel")
+
+Cluster.create(name: "Red Rice", category: food)
+Cluster.create(name: "Geechee 101", category: vid)
+Cluster.create(name: "Head Wraps", category: clothes)
+Cluster.create(name: "Charleston", category: location)
