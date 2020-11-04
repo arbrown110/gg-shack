@@ -2,10 +2,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/appContainer.js"></script>
+    <script src="src/index.js"></script>
     <title>Gullah InSpired</title>
 </head>
 <body>
-    <script src="src/appContainer.js"></script>
-    <script src="src/index.js"></script>
+    <h1>Gullah Inspired</h1>
+    <nav class="category-nav">
+        <ul id="category">
+            <li class="category-name">Food</li>
+            <li class="category-name">Media</li>
+            <li class="category-name">Clothing</li>
+            <li class="category-name">Travel</li>
+            <li class="category-name">Add New favorite</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form id="create-new-cluster-form">
+            <label for="cluster">New Content</label>
+            <select class="form-control" id="category-select">
+            <option selected="selected">All Content</option>
+            
+            </select>
+        <div class="form-group">
+            <label for="Cluster Name">Name</label>
+            <input type="item-name" class="form-control" id="item-name" aria-describedby="emailHelp" placeholder="Enter Item name" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Image Url</label>
+            <input type="text" class="form-control" id="image-url" placeholder="Enter image address link" required>
+        </div>
+        <div class="form-group">
+            <label for="image">Source Url</label>
+            <input type="text" class="form-control" id="source-url" placeholder="Enter source address link" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" rows="3" required></textarea>
+        </div>
+        <button type="submit" id="submit-form">Submit</button>
+        </form>
+    </div>
+
 </body>
 </html>
